@@ -4,13 +4,14 @@
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
       <!-- bootstrap theme from https://bootswatch.com -->
-      <link rel="stylesheet" href="/stylesheets/boostrap.min.css" />
+      <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
   </head>
   <body>
-  <nav class="navbar navbar-expand-sm bg-light">
-      <!-- Links -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
       <ul class="navbar-nav">
-          <a class="navbar-brand" href="/">Project Tracker</a>
+          <li class="nav-item active">
+              <a class="nav-link" href="/">Project Tracker</a>
+          </li>
           <li class="nav-item">
               <a class="nav-link" href="/about">About</a>
           </li>
@@ -18,8 +19,8 @@
               <a class="nav-link" href="/projects">Projects</a>
           </li>
       </ul>
-  </nav>
 
+  </nav>
 
   {{{body}}}
   </body>
