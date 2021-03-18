@@ -64,6 +64,12 @@ router.get('/login', (req, res, next) => {
 
 }))
 
+/*get/logout */
+router.get('/logout', (req,res,next) => {
+  req.logout()
+  res.redirect('/login')
+})
+
 
 //makes the controller public
 module.exports = router;
