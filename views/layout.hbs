@@ -21,9 +21,11 @@
               <a class="nav-link" href="/projects">Projects</a>
           </li>
           </li>
-          <li class="nav-item">
+          {{#if user}}
+            <li class="nav-item">
               <a class="nav-link" href="/courses/add">Add Course</a>
-          </li>
+            </li>
+          {{/if}}
       </ul>
             <ul class="navbar-nav ml-auto">
                 {{#if user}}
