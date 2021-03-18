@@ -70,6 +70,16 @@ router.get('/logout', (req,res,next) => {
   res.redirect('/login')
 })
 
+/*Get / github - try github auth */
+router.get('/github', passport.authenticate('github', { scope: ['user.email']}))
+
+/*get/github/callback - what to do after github login */
+router.get('/github/callback', passport.authenticate('github', {
+      failureRedirect: '/login'}),
+    (req, res, next) => {
+      res.redirect('/projects')
+    })
+
 
 //makes the controller public
 module.exports = router;
